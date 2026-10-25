@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muhammed Mustafa Meghani | It's a Boy</title>
+
+  <meta
+    name="description"
+    content="Alhamdulillah, Allah has blessed Muhammed Hamza and Zaiba with a beautiful baby boy, Muhammed Mustafa Meghani."
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+
+      --green: #073b2f;
+      --green-dark: #031f18;
+      --green-deep: #01130e;
+      --green-soft: #0e5945;
+
+      --gold: #c9a45d;
+      --gold-light: #ead49b;
+      --gold-dark: #967338;
+
+      --cream: #faf8f1;
+      --cream-soft: #f3eee1;
+
+      --white: #ffffff;
+
+      --text: #425a53;
+      --text-light: #6b7d77;
+
+      --heading-font: "Cinzel", serif;
+      --body-font: "Inter", sans-serif;
+
+      --body-size: 18px;
+      --small-size: 16px;
+      --heading-size: 30px;
+    }
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 18px;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+
+      font-family: var(--body-font);
+      font-size: 18px;
+      line-height: 1.7;
+
+      background: var(--cream);
+      color: var(--text);
+
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    button,
+    a {
+      font-family: var(--body-font);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    /* =========================================================
+       HEADINGS
+    ========================================================= */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .main-title,
+    .baby-name,
+    .dua-heading {
+      font-family: var(--heading-font);
+    }
+
+
+    /* =========================================================
+       LOADER
+    ========================================================= */
+
+    .loader {
+      position: fixed;
+      inset: 0;
+
+      z-index: 99999;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background:
+        radial-gradient(
+          circle at center,
+          #0c5743 0%,
+          #073b2f 42%,
+          #02150f 100%
+        );
+
+      color: var(--white);
+    }
+
+    .loader-content {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .loader-bismillah {
+      font-size: 22px;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .loader-line {
+      width: 80px;
+      height: 2px;
+      margin: 0 auto 20px;
+
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--gold),
+        transparent
+      );
+    }
+
+    .loader-text {
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,.78);
+    }
+
+
+    /* =========================================================
+       MAIN HERO
+    ========================================================= */
+
+    .hero {
+      position: relative;
+
+      min-height: 100vh;
+      min-height: 100svh;
+
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+
+      background:
+        radial-gradient(
+          circle at 50% 32%,
+          rgba(23, 105, 78, .35),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at 50% 80%,
+          rgba(201, 164, 93, .09),
+          transparent 30%
+        ),
+        linear-gradient(
+          145deg,
+          #031f18 0%,
+          #073b2f 48%,
+          #02150f 100%
+        );
+    }
+
+
+    /* =========================================================
+       BACKGROUND PATTERN
+    ========================================================= */
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      opacity: .12;
+
+      background-image:
+        linear-gradient(
+          30deg,
+          #ffffff 12%,
+          transparent 12.5%,
+          transparent 87%,
+          #ffffff 87.5%,
+          #ffffff
+        ),
+        linear-gradient(
+          150deg,
+          #ffffff 12%,
+          transparent 12.5%,
+          transparent 87%,
+          #ffffff 87.5%,
+          #ffffff
+        );
+
+      background-size: 80px 140px;
+      background-position: 0 0, 40px 70px;
+
+      pointer-events: none;
+    }
+
+
+    /* =========================================================
+       CENTER GLOW
+    ========================================================= */
+
+    .center-light {
+      position: absolute;
+
+      width: 650px;
+      height: 650px;
+
+      top: 40%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(255,255,255,.08) 0%,
+          rgba(201,164,93,.05) 30%,
+          transparent 70%
+        );
+
+      filter: blur(12px);
+
+      pointer-events: none;
+    }
+
+
+    /* =========================================================
+       TOP ORNAMENT
+    ========================================================= */
+
+    .top-ornament {
+      position: absolute;
+
+      top: 24px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      width: 170px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      z-index: 5;
+    }
+
+    .ornament-line {
+      width: 55px;
+      height: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--gold)
+        );
+    }
+
+    .ornament-line:last-child {
+      background:
+        linear-gradient(
+          90deg,
+          var(--gold),
+          transparent
+        );
+    }
+
+    .ornament-star {
+      color: var(--gold-light);
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       MOON
+    ========================================================= */
+
+    .moon {
+      position: absolute;
+
+      top: 80px;
+      right: 10%;
+
+      width: 58px;
+      height: 58px;
+
+      border-radius: 50%;
+
+      background: var(--gold-light);
+
+      box-shadow:
+        0 0 25px rgba(234,212,155,.25),
+        0 0 60px rgba(234,212,155,.10);
+
+      opacity: .9;
+
+      z-index: 3;
+    }
+
+    .moon::after {
+      content: "";
+
+      position: absolute;
+
+      width: 58px;
+      height: 58px;
+
+      top: -8px;
+      left: 14px;
+
+      border-radius: 50%;
+
+      background: var(--green-dark);
+    }
+
+
+    /* =========================================================
+       STARS
+    ========================================================= */
+
+    .star {
+      position: absolute;
+
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+
+      background: var(--gold-light);
+
+      box-shadow:
+        0 0 10px rgba(234,212,155,.7);
+
+      z-index: 2;
+    }
+
+    .star-1 {
+      top: 16%;
+      left: 12%;
+    }
+
+    .star-2 {
+      top: 30%;
+      left: 7%;
+    }
+
+    .star-3 {
+      top: 17%;
+      right: 28%;
+    }
+
+    .star-4 {
+      top: 36%;
+      right: 12%;
+    }
+
+    .star-5 {
+      bottom: 25%;
+      left: 15%;
+    }
+
+    .star-6 {
+      bottom: 18%;
+      right: 15%;
+    }
+
+
+    /* =========================================================
+       BALLOONS
+    ========================================================= */
+
+    .balloon {
+      position: absolute;
+
+      width: 80px;
+      height: 96px;
+
+      border-radius: 50% 50% 48% 48%;
+
+      z-index: 2;
+
+      filter: drop-shadow(
+        0 15px 20px rgba(0,0,0,.22)
+      );
+
+      opacity: .92;
+    }
+
+    .balloon::before {
+      content: "";
+
+      position: absolute;
+
+      width: 14px;
+      height: 14px;
+
+      left: 50%;
+      bottom: -6px;
+
+      transform: translateX(-50%) rotate(45deg);
+
+      background: inherit;
+    }
+
+    .balloon::after {
+      content: "";
+
+      position: absolute;
+
+      left: 50%;
+      bottom: -90px;
+
+      width: 1px;
+      height: 90px;
+
+      background: rgba(255,255,255,.45);
+    }
+
+    .balloon-gold {
+      background:
+        radial-gradient(
+          circle at 30% 25%,
+          rgba(255,255,255,.55),
+          transparent 18%
+        ),
+        linear-gradient(
+          145deg,
+          #f0d998,
+          #b99145
+        );
+    }
+
+    .balloon-blue {
+      background:
+        radial-gradient(
+          circle at 30% 25%,
+          rgba(255,255,255,.5),
+          transparent 18%
+        ),
+        linear-gradient(
+          145deg,
+          #79b5c8,
+          #2f697b
+        );
+    }
+
+    .balloon-white {
+      background:
+        radial-gradient(
+          circle at 30% 25%,
+          rgba(255,255,255,.9),
+          transparent 20%
+        ),
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #cfded8
+        );
+    }
+
+    .balloon-1 {
+      top: 15%;
+      left: 5%;
+    }
+
+    .balloon-2 {
+      top: 24%;
+      left: 11%;
+      transform: scale(.72);
+    }
+
+    .balloon-3 {
+      top: 16%;
+      right: 5%;
+    }
+
+    .balloon-4 {
+      top: 27%;
+      right: 11%;
+      transform: scale(.72);
+    }
+
+
+    /* =========================================================
+       CONTENT
+    ========================================================= */
+
+    .content {
+      position: relative;
+
+      z-index: 10;
+
+      width: min(920px, 92%);
+
+      margin: 0 auto;
+
+      padding:
+        90px
+        0
+        80px;
+
+      text-align: center;
+
+      color: var(--white);
+    }
+
+
+    /* =========================================================
+       BISMILLAH
+    ========================================================= */
+
+    .bismillah {
+      font-size: 22px;
+
+      color: var(--gold-light);
+
+      margin-bottom: 22px;
+
+      letter-spacing: .5px;
+
+      text-shadow:
+        0 2px 15px rgba(0,0,0,.25);
+    }
+
+
+    /* =========================================================
+       LABEL
+    ========================================================= */
+
+    .label {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-height: 40px;
+
+      padding: 7px 18px;
+
+      border: 1px solid rgba(234,212,155,.35);
+
+      border-radius: 999px;
+
+      background:
+        rgba(255,255,255,.06);
+
+      backdrop-filter: blur(12px);
+
+      color: var(--gold-light);
+
+      font-size: 16px;
+
+      font-weight: 600;
+
+      letter-spacing: .8px;
+
+      box-shadow:
+        0 10px 35px rgba(0,0,0,.15),
+        inset 0 1px 0 rgba(255,255,255,.1);
+    }
+
+
+    /* =========================================================
+       MAIN TITLE
+    ========================================================= */
+
+    .main-title {
+      margin-top: 24px;
+
+      font-size: 30px;
+
+      font-weight: 700;
+
+      line-height: 1.2;
+
+      letter-spacing: 1px;
+
+      color: var(--white);
+
+      text-shadow:
+        0 6px 24px rgba(0,0,0,.28);
+    }
+
+    .main-title-sub {
+      display: block;
+
+      margin-top: 12px;
+
+      font-family: var(--body-font);
+
+      font-size: 18px;
+
+      font-weight: 500;
+
+      letter-spacing: .2px;
+
+      color: rgba(255,255,255,.78);
+    }
+
+
+    /* =========================================================
+       DIVIDER
+    ========================================================= */
+
+    .divider {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 12px;
+
+      margin: 25px auto 22px;
+
+      width: min(340px, 70%);
+    }
+
+    .divider-line {
+      height: 1px;
+      flex: 1;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(201,164,93,.65)
+        );
+    }
+
+    .divider-line:last-child {
+      background:
+        linear-gradient(
+          90deg,
+          rgba(201,164,93,.65),
+          transparent
+        );
+    }
+
+    .divider-diamond {
+      width: 8px;
+      height: 8px;
+
+      transform: rotate(45deg);
+
+      background: var(--gold-light);
+
+      box-shadow:
+        0 0 12px rgba(234,212,155,.4);
+    }
+
+
+    /* =========================================================
+       BABY NAME
+    ========================================================= */
+
+    .baby-name {
+      position: relative;
+
+      display: inline-block;
+
+      font-size: 30px;
+
+      font-weight: 700;
+
+      line-height: 1.25;
+
+      color: var(--gold-light);
+
+      letter-spacing: 1px;
+
+      text-shadow:
+        0 5px 25px rgba(0,0,0,.25),
+        0 0 35px rgba(201,164,93,.15);
+    }
+
+    .baby-caption {
+      margin-top: 9px;
+
+      font-size: 18px;
+
+      font-weight: 500;
+
+      color: rgba(255,255,255,.75);
+
+      letter-spacing: .4px;
+    }
+
+
+    /* =========================================================
+       DATE
+    ========================================================= */
+
+    .dates {
+      margin-top: 24px;
+    }
+
+    .english-date {
+      display: inline-block;
+
+      padding: 9px 18px;
+
+      border-radius: 999px;
+
+      border: 1px solid rgba(255,255,255,.14);
+
+      background:
+        rgba(255,255,255,.06);
+
+      box-shadow:
+        0 12px 30px rgba(0,0,0,.15),
+        inset 0 1px 0 rgba(255,255,255,.08);
+
+      font-size: 16px;
+
+      color: rgba(255,255,255,.82);
+    }
+
+    .english-date strong {
+      color: var(--gold-light);
+      font-weight: 700;
+    }
+
+
+    /* =========================================================
+       BLESSING
+    ========================================================= */
+
+    .blessing {
+      width: min(780px, 100%);
+
+      margin: 28px auto 0;
+
+      padding: 24px 26px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,.09),
+          rgba(255,255,255,.035)
+        );
+
+      border: 1px solid rgba(255,255,255,.13);
+
+      box-shadow:
+        0 25px 60px rgba(0,0,0,.22),
+        0 8px 20px rgba(0,0,0,.12),
+        inset 0 1px 0 rgba(255,255,255,.1);
+
+      backdrop-filter: blur(15px);
+    }
+
+    .blessing p {
+      font-size: 18px;
+
+      color: rgba(255,255,255,.84);
+
+      line-height: 1.8;
+    }
+
+    .blessing strong {
+      color: var(--gold-light);
+    }
+
+
+    /* =========================================================
+       PARENTS + FAMILY
+    ========================================================= */
+
+    .parents,
+    .family {
+      margin-top: 28px;
+    }
+
+    .small-label {
+      font-size: 16px;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.8px;
+
+      color: var(--gold-light);
+    }
+
+    .parents-name,
+    .family-name {
+      margin-top: 6px;
+
+      font-family: var(--heading-font);
+
+      font-size: 30px;
+
+      font-weight: 600;
+
+      line-height: 1.35;
+
+      color: var(--white);
+
+      text-shadow:
+        0 5px 18px rgba(0,0,0,.25);
+    }
+
+    .amp {
+      color: var(--gold-light);
+
+      padding:
+        0 8px;
+    }
+
+
+    /* =========================================================
+       FINAL MESSAGE
+    ========================================================= */
+
+    .final {
+      margin-top: 34px;
+
+      padding-top: 26px;
+
+      border-top:
+        1px solid rgba(255,255,255,.12);
+    }
+
+    .final-main {
+      font-family: var(--heading-font);
+
+      font-size: 30px;
+
+      font-weight: 600;
+
+      color: var(--gold-light);
+    }
+
+    .final-sub {
+      margin-top: 7px;
+
+      font-size: 18px;
+
+      color: rgba(255,255,255,.72);
+    }
+
+
+    /* =========================================================
+       DUA SECTION
+    ========================================================= */
+
+    .dua-section {
+      margin-top: 45px;
+
+      padding: 32px 28px;
+
+      border-radius: 26px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(250,248,241,.98),
+          rgba(243,238,225,.95)
+        );
+
+      color: var(--text);
+
+      border:
+        1px solid rgba(201,164,93,.35);
+
+      box-shadow:
+        0 35px 80px rgba(0,0,0,.25),
+        0 12px 28px rgba(0,0,0,.12),
+        inset 0 1px 0 rgba(255,255,255,.9);
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .dua-section::before {
+      content: "";
+
+      position: absolute;
+
+      width: 200px;
+      height: 200px;
+
+      top: -100px;
+      right: -80px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(201,164,93,.18),
+          transparent 70%
+        );
+
+      pointer-events: none;
+    }
+
+    .dua-label {
+      font-size: 16px;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+
+      color: var(--green-soft);
+    }
+
+    .dua-heading {
+      margin-top: 8px;
+
+      font-size: 30px;
+
+      line-height: 1.25;
+
+      color: var(--green);
+    }
+
+    .dua-text {
+      max-width: 750px;
+
+      margin: 16px auto 0;
+
+      font-size: 18px;
+
+      line-height: 1.8;
+
+      color: #526761;
+    }
+
+    .dua-actions {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 25px;
+    }
+
+    .dua-btn {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-height: 50px;
+
+      padding: 12px 20px;
+
+      border-radius: 999px;
+
+      font-size: 16px;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+    }
+
+    .dua-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .send-dua {
+      background: var(--green);
+
+      color: var(--white);
+
+      box-shadow:
+        0 14px 30px rgba(7,59,47,.22);
+    }
+
+    .copy-dua {
+      border: 1px solid rgba(7,59,47,.18);
+
+      background: rgba(255,255,255,.65);
+
+      color: var(--green);
+
+      box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+    }
+
+    .dua-note {
+      margin-top: 14px;
+
+      font-size: 16px;
+
+      color: var(--text-light);
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    .footer {
+      padding-top: 35px;
+
+      font-size: 16px;
+
+      color: rgba(255,255,255,.55);
+    }
+
+
+    /* =========================================================
+       MUSIC BUTTON
+    ========================================================= */
+
+    .music-button {
+      position: fixed;
+
+      z-index: 100;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 56px;
+      height: 56px;
+
+      border: 1px solid rgba(234,212,155,.4);
+
+      border-radius: 50%;
+
+      background:
+        rgba(3,31,24,.85);
+
+      color: var(--gold-light);
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      font-size: 20px;
+
+      cursor: pointer;
+
+      backdrop-filter: blur(12px);
+
+      box-shadow:
+        0 15px 35px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.12);
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+    }
+
+    .music-button:hover {
+      transform: translateY(-3px) scale(1.04);
+
+      box-shadow:
+        0 20px 45px rgba(0,0,0,.35),
+        0 0 25px rgba(201,164,93,.15);
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 768px) {
+
+      .content {
+        width: 91%;
+        padding: 80px 0 60px;
+      }
+
+      .top-ornament {
+        top: 18px;
+      }
+
+      .moon {
+        top: 70px;
+        right: 6%;
+        width: 48px;
+        height: 48px;
+      }
+
+      .moon::after {
+        width: 48px;
+        height: 48px;
+        left: 11px;
+      }
+
+      .balloon {
+        width: 62px;
+        height: 76px;
+      }
+
+      .balloon-1 {
+        left: 1%;
+      }
+
+      .balloon-2 {
+        left: 7%;
+      }
+
+      .balloon-3 {
+        right: 1%;
+      }
+
+      .balloon-4 {
+        right: 7%;
+      }
+
+      .bismillah {
+        font-size: 20px;
+      }
+
+      .main-title,
+      .baby-name,
+      .parents-name,
+      .family-name,
+      .final-main,
+      .dua-heading {
+        font-size: 30px;
+      }
+
+      .main-title-sub,
+      .baby-caption,
+      .blessing p,
+      .dua-text,
+      .final-sub {
+        font-size: 18px;
+      }
+
+      .blessing {
+        padding: 21px 18px;
+      }
+
+      .dua-section {
+        padding: 28px 18px;
+      }
+
+      .dua-actions {
+        flex-direction: column;
+      }
+
+      .dua-btn {
+        width: 100%;
+      }
+    }
+
+
+    @media (max-width: 380px) {
+
+      .content {
+        width: 92%;
+        padding-top: 72px;
+      }
+
+      .bismillah {
+        font-size: 18px;
+      }
+
+      .label,
+      .small-label,
+      .english-date,
+      .dua-label,
+      .dua-note {
+        font-size: 16px;
+      }
+
+      .main-title,
+      .baby-name,
+      .parents-name,
+      .family-name,
+      .final-main,
+      .dua-heading {
+        font-size: 30px;
+      }
+
+      .main-title-sub,
+      .baby-caption,
+      .blessing p,
+      .dua-text,
+      .final-sub {
+        font-size: 18px;
+      }
+
+      .balloon {
+        width: 48px;
+        height: 60px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =======================================================
+       LOADER
+  ======================================================== -->
+
+  <div class="loader" id="loader">
+
+    <div class="loader-content">
+
+      <div
+        class="loader-bismillah"
+        dir="rtl"
+      >
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+      </div>
+
+      <div class="loader-line"></div>
+
+      <div class="loader-text">
+        A Beautiful Blessing Is Arriving...
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       MUSIC
+  ======================================================== -->
+
+  <audio
+    id="babyMusic"
+    loop
+    preload="auto"
+  >
+    <source src="baby-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button
+    type="button"
+    class="music-button"
+    id="musicButton"
+    aria-label="Play music"
+  >
+    ♪
+  </button>
+
+
+  <!-- =======================================================
+       HERO
+  ======================================================== -->
+
+  <main class="hero">
+
+    <div class="center-light"></div>
+
+
+    <!-- TOP ORNAMENT -->
+
+    <div class="top-ornament">
+
+      <span class="ornament-line"></span>
+
+      <span class="ornament-star">✦</span>
+
+      <span class="ornament-line"></span>
+
+    </div>
+
+
+    <!-- MOON -->
+
+    <div class="moon"></div>
+
+
+    <!-- STARS -->
+
+    <span class="star star-1"></span>
+    <span class="star star-2"></span>
+    <span class="star star-3"></span>
+    <span class="star star-4"></span>
+    <span class="star star-5"></span>
+    <span class="star star-6"></span>
+
+
+    <!-- BALLOONS -->
+
+    <div class="balloon balloon-gold balloon-1"></div>
+
+    <div class="balloon balloon-blue balloon-2"></div>
+
+    <div class="balloon balloon-white balloon-3"></div>
+
+    <div class="balloon balloon-gold balloon-4"></div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <section class="content">
+
+
+      <!-- BISMILLAH -->
+
+      <div
+        class="bismillah"
+        dir="rtl"
+      >
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+      </div>
+
+
+      <!-- LABEL -->
+
+      <div class="label">
+        Alhamdulillah • A Blessed Beginning
+      </div>
+
+
+      <!-- MAIN HEADING -->
+
+      <h1 class="main-title">
+
+        It's a Boy
+
+        <span class="main-title-sub">
+          Allah Has Blessed Us With A Beautiful Gift
+        </span>
+
+      </h1>
+
+
+      <!-- DIVIDER -->
+
+      <div class="divider">
+
+        <span class="divider-line"></span>
+
+        <span class="divider-diamond"></span>
+
+        <span class="divider-line"></span>
+
+      </div>
+
+
+      <!-- BABY NAME -->
+
+      <h2 class="baby-name">
+        Muhammed Mustafa Meghani
+      </h2>
+
+      <div class="baby-caption">
+        Our Little Blessing
+      </div>
+
+
+      <!-- DATE -->
+
+      <div class="dates">
+
+        <div class="english-date">
+          Born on
+          <strong>17 September 2026</strong>
+        </div>
+
+      </div>
+
+
+      <!-- BLESSING -->
+
+      <div class="blessing">
+
+        <p>
+
+          By the grace and blessings of
+          <strong>Rasool-e-Pak ﷺ</strong>,
+          <strong>Panjatan-e-Pak</strong>,
+          <strong>Gaus-e-Pak</strong>,
+          <strong>Garib Nawaz</strong>,
+          and all the blessed
+          <strong>Auliya-e-Kiram</strong>
+          and our
+          <strong>Peer-o-Murshid</strong>,
+          Allah has blessed our family with a beautiful baby boy.
+
+        </p>
+
+      </div>
+
+
+      <!-- PARENTS -->
+
+      <div class="parents">
+
+        <div class="small-label">
+          Blessed Parents
+        </div>
+
+        <div class="parents-name">
+
+          Muhammed Hamza
+
+          <span class="amp">&</span>
+
+          Zaiba
+
+        </div>
+
+      </div>
+
+
+      <!-- FAMILY -->
+
+      <div class="family">
+
+        <div class="small-label">
+          Blessed Families
+        </div>
+
+        <div class="family-name">
+          Meghani's & Nagariya's
+        </div>
+
+      </div>
+
+
+      <!-- FINAL MESSAGE -->
+
+      <div class="final">
+
+        <div class="final-main">
+          Alhamdulillah for this beautiful blessing.
+        </div>
+
+        <div class="final-sub">
+          May Allah Bless Our Little Prince • Ameen
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           DUA SECTION
+      ==================================================== -->
+
+      <div class="dua-section">
+
+        <div class="dua-label">
+          Please Remember Them In Your Dua
+        </div>
+
+        <h3 class="dua-heading">
+          Send Your Blessings & Dua
+        </h3>
+
+
+        <p class="dua-text">
+
+          May Allah ﷻ bless
+          <strong>Muhammed Mustafa Meghani</strong>
+          with a life full of Imaan, good health, happiness,
+          knowledge, success and countless blessings.
+
+          May He protect him from every harm, grant him
+          righteous character and make him a source of happiness,
+          pride and Sadaqah-e-Jariyah for his family.
+
+          May Allah ﷻ bless his parents,
+          <strong>Muhammed Hamza & Zaiba</strong>,
+          with good health, peace, happiness and endless strength.
+
+          May Allah place Barakah in their family,
+          protect their home, accept their prayers and grant them
+          the beautiful joy of watching their son grow under His
+          mercy and protection.
+
+          May Allah keep this beautiful family together
+          in love, peace and Imaan.
+
+          Ameen Ya Rabbal Aalameen. 🤲
+
+        </p>
+
+
+        <div class="dua-actions">
+
+          <a
+            class="dua-btn send-dua"
+            id="sendDua"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            💚 Send Dua to Parents
+          </a>
+
+
+          <button
+            type="button"
+            class="dua-btn copy-dua"
+            id="copyDua"
+          >
+            ✦ Copy Dua
+          </button>
+
+        </div>
+
+
+        <div class="dua-note">
+
+          Your dua will open directly in WhatsApp to the family.
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER -->
+
+      <footer class="footer">
+
+        Made with love & duas • Alhamdulillah 🤍
+
+      </footer>
+
+    </section>
+
+  </main>
+
+
+  <!-- =======================================================
+       JAVASCRIPT
+  ======================================================== -->
+
+  <script>
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+
+
+        /* ===================================================
+           ELEMENTS
+        ==================================================== */
+
+        const loader =
+          document.getElementById("loader");
+
+        const music =
+          document.getElementById("babyMusic");
+
+        const musicButton =
+          document.getElementById("musicButton");
+
+        const sendDua =
+          document.getElementById("sendDua");
+
+        const copyDua =
+          document.getElementById("copyDua");
+
+
+        /* ===================================================
+           DUA TEXT
+        ==================================================== */
+
+        const duaText = `Assalamu Alaikum 🤍
+
+May Allah ﷻ bless Muhammed Mustafa Meghani with a life full of Imaan, good health, happiness, knowledge, success and countless blessings.
+
+May He protect him from every harm, grant him righteous character and make him a source of happiness, pride and Sadaqah-e-Jariyah for his family.
+
+May Allah ﷻ bless his parents, Muhammed Hamza & Zaiba, with good health, peace, happiness and endless strength.
+
+May Allah place Barakah in their family, protect their home, accept their prayers and grant them the beautiful joy of watching their son grow under His mercy and protection.
+
+May Allah keep this beautiful family together in love, peace and Imaan.
+
+Ameen Ya Rabbal Aalameen. 🤲`;
+
+
+        /* ===================================================
+           WHATSAPP
+        ==================================================== */
+
+        const whatsappNumber =
+          "917977027359";
+
+        const whatsappURL =
+          "https://wa.me/" +
+          whatsappNumber +
+          "?text=" +
+          encodeURIComponent(duaText);
+
+        sendDua.href = whatsappURL;
+
+
+        /* ===================================================
+           COPY DUA
+        ==================================================== */
+
+        copyDua.addEventListener(
+          "click",
+          async function () {
+
+            try {
+
+              await navigator.clipboard.writeText(
+                duaText
+              );
+
+              copyDua.textContent =
+                "✓ Dua Copied";
+
+              setTimeout(
+                function () {
+
+                  copyDua.textContent =
+                    "✦ Copy Dua";
+
+                },
+                2200
+              );
+
+            } catch (error) {
+
+              copyDua.textContent =
+                "Please Copy Manually";
+
+              setTimeout(
+                function () {
+
+                  copyDua.textContent =
+                    "✦ Copy Dua";
+
+                },
+                2200
+              );
+
+            }
+
+          }
+        );
+
+
+        /* ===================================================
+           MUSIC
+        ==================================================== */
+
+        let musicPlaying = false;
+
+
+        musicButton.addEventListener(
+          "click",
+          function () {
+
+            if (!musicPlaying) {
+
+              music
+                .play()
+                .then(function () {
+
+                  musicPlaying = true;
+
+                  musicButton.textContent = "Ⅱ";
+
+                })
+                .catch(function () {
+
+                  musicButton.textContent = "▶";
+
+                });
+
+            } else {
+
+              music.pause();
+
+              musicPlaying = false;
+
+              musicButton.textContent = "♪";
+
+            }
+
+          }
+        );
+
+
+        /* ===================================================
+           GSAP INITIAL STATES
+        ==================================================== */
+
+        gsap.set(
+          ".bismillah",
+          {
+            opacity: 0,
+            y: 20
+          }
+        );
+
+        gsap.set(
+          ".label",
+          {
+            opacity: 0,
+            y: 20
+          }
+        );
+
+        gsap.set(
+          ".main-title",
+          {
+            opacity: 0,
+            y: 25
+          }
+        );
+
+        gsap.set(
+          ".divider",
+          {
+            opacity: 0,
+            scaleX: 0
+          }
+        );
+
+        gsap.set(
+          ".baby-name",
+          {
+            opacity: 0,
+            y: 25,
+            scale: .94
+          }
+        );
+
+        gsap.set(
+          ".baby-caption",
+          {
+            opacity: 0,
+            y: 15
+          }
+        );
+
+        gsap.set(
+          ".dates",
+          {
+            opacity: 0,
+            y: 15
+          }
+        );
+
+        gsap.set(
+          ".blessing",
+          {
+            opacity: 0,
+            y: 25
+          }
+        );
+
+        gsap.set(
+          ".parents",
+          {
+            opacity: 0,
+            y: 20
+          }
+        );
+
+        gsap.set(
+          ".family",
+          {
+            opacity: 0,
+            y: 20
+          }
+        );
+
+        gsap.set(
+          ".final",
+          {
+            opacity: 0,
+            y: 20
+          }
+        );
+
+        gsap.set(
+          ".dua-section",
+          {
+            opacity: 0,
+            y: 35
+          }
+        );
+
+        gsap.set(
+          ".footer",
+          {
+            opacity: 0
+          }
+        );
+
+
+        /* ===================================================
+           LOADER
+        ==================================================== */
+
+        const loaderTimeline =
+          gsap.timeline();
+
+
+        loaderTimeline
+          .to(
+            ".loader-bismillah",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .9,
+              ease: "power3.out"
+            }
+          )
+          .to(
+            ".loader-line",
+            {
+              width: 120,
+              duration: .7,
+              ease: "power2.out"
+            },
+            "-=.4"
+          )
+          .to(
+            ".loader-text",
+            {
+              opacity: 1,
+              duration: .6
+            },
+            "-=.3"
+          )
+          .to(
+            loader,
+            {
+              opacity: 0,
+              duration: .9,
+              delay: .7,
+              ease: "power2.inOut",
+              onComplete: function () {
+
+                loader.style.display =
+                  "none";
+
+              }
+            }
+          );
+
+
+        /* ===================================================
+           MAIN TIMELINE
+        ==================================================== */
+
+        const master =
+          gsap.timeline({
+            delay: 2.9
+          });
+
+
+        master
+
+          .to(
+            ".bismillah",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .7,
+              ease: "power3.out"
+            }
+          )
+
+          .to(
+            ".label",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .65,
+              ease: "power3.out"
+            },
+            "-=.35"
+          )
+
+          .to(
+            ".main-title",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .75,
+              ease: "power3.out"
+            },
+            "-=.35"
+          )
+
+          .to(
+            ".divider",
+            {
+              opacity: 1,
+              scaleX: 1,
+              duration: .7,
+              ease: "power3.out"
+            },
+            "-=.35"
+          )
+
+          .to(
+            ".baby-name",
+            {
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              duration: .9,
+              ease: "back.out(1.5)"
+            },
+            "-=.25"
+          )
+
+          .to(
+            ".baby-caption",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .5
+            },
+            "-=.45"
+          )
+
+          .to(
+            ".dates",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .5
+            },
+            "-=.25"
+          )
+
+          .to(
+            ".blessing",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .75,
+              ease: "power3.out"
+            },
+            "-=.2"
+          )
+
+          .to(
+            ".parents",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .6
+            },
+            "-=.3"
+          )
+
+          .to(
+            ".family",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .6
+            },
+            "-=.35"
+          )
+
+          .to(
+            ".final",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .6
+            },
+            "-=.3"
+          )
+
+          .to(
+            ".dua-section",
+            {
+              opacity: 1,
+              y: 0,
+              duration: .8,
+              ease: "power3.out"
+            },
+            "-=.15"
+          )
+
+          .to(
+            ".footer",
+            {
+              opacity: 1,
+              duration: .5
+            },
+            "-=.25"
+          );
+
+
+        /* ===================================================
+           BALLOON ANIMATION
+        ==================================================== */
+
+        gsap.to(
+          ".balloon-1",
+          {
+            y: -22,
+            rotation: -4,
+            duration: 3.5,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+          }
+        );
+
+        gsap.to(
+          ".balloon-2",
+          {
+            y: -30,
+            rotation: 5,
+            duration: 4.2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: .4
+          }
+        );
+
+        gsap.to(
+          ".balloon-3",
+          {
+            y: -24,
+            rotation: 4,
+            duration: 3.8,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: .2
+          }
+        );
+
+        gsap.to(
+          ".balloon-4",
+          {
+            y: -28,
+            rotation: -5,
+            duration: 4.5,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: .7
+          }
+        );
+
+
+        /* ===================================================
+           MOON
+        ==================================================== */
+
+        gsap.to(
+          ".moon",
+          {
+            y: -8,
+            duration: 3,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+          }
+        );
+
+
+        /* ===================================================
+           STARS TWINKLE
+        ==================================================== */
+
+        gsap.to(
+          ".star",
+          {
+            opacity: .25,
+            scale: .65,
+            duration: 1.5,
+            stagger: .25,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+          }
+        );
+
+
+        /* ===================================================
+           CENTER LIGHT
+        ==================================================== */
+
+        gsap.to(
+          ".center-light",
+          {
+            scale: 1.12,
+            opacity: .8,
+            duration: 4,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+          }
+        );
+
+
+        /* ===================================================
+           MOUSE PARALLAX
+        ==================================================== */
+
+        if (window.innerWidth > 768) {
+
+          document.addEventListener(
+            "mousemove",
+            function (event) {
+
+              const x =
+                (event.clientX /
+                  window.innerWidth -
+                  .5) * 2;
+
+              const y =
+                (event.clientY /
+                  window.innerHeight -
+                  .5) * 2;
+
+
+              gsap.to(
+                ".balloon-1",
+                {
+                  x: x * 12,
+                  y: y * 8,
+                  duration: .8,
+                  overwrite: "auto"
+                }
+              );
+
+              gsap.to(
+                ".balloon-3",
+                {
+                  x: x * -12,
+                  y: y * 8,
+                  duration: .8,
+                  overwrite: "auto"
+                }
+              );
+
+              gsap.to(
+                ".moon",
+                {
+                  x: x * -8,
+                  y: y * -6,
+                  duration: 1,
+                  overwrite: "auto"
+                }
+              );
+
+            }
+          );
+
+        }
+
+
+      }
+
+    );
+
+  </script>
+
+</body>
+</html>
